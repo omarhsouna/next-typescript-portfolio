@@ -18,6 +18,14 @@ const config: Config = {
         'active-link': 'inset 0 -6px 0 #fdd912',
         'header':"0 25px 50px rgba(0, 0, 0, 0.045)"
       },
+      animation: {
+        blink: 'blink 1s step-end infinite',
+      },
+      keyframes: {
+        blink: {
+          '50%': { opacity: "0" },
+        },
+      },
     },
   },
   plugins: [],
