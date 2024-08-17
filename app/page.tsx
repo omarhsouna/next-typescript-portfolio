@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="w-screen h-screen bg-center bg-no-repeat bg-cover"
+        className="h-screen bg-center bg-no-repeat bg-cover"
         style={{
           backgroundImage: `url('/images/banner.jpg')`,
         }}
