@@ -44,7 +44,7 @@ export default function Header() {
   }
   return (
     <header className={
-      clsx('w-full fixed top-0 left-0 py-7 px-9  transition duration-300 ease-linear delay-0 ', hasScrolled ? "bg-white shadow-header" : "bg-header-gradient")
+      clsx('w-full fixed top-0 left-0 py-7 px-9 z-20  transition duration-300 ease-linear delay-0 ', hasScrolled ? "bg-white shadow-header" : "bg-header-gradient")
     }>
       <div className="mx-auto max-w-full lg:max-w-screen-xl flex items-center justify-between">
 

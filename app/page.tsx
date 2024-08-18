@@ -1,5 +1,6 @@
-import SocialMediaLinks from "@/components/SocialMediaLinks";
-import TypingEffect from "@/components/TypingEffect";
+import About from "components/sections/About";
+import SocialMediaLinks from "components/SocialMediaLinks";
+import TypingEffect from "components/TypingEffect";
 import Header from "components/layout/Header";
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
           <SocialMediaLinks />
         </div>
       </div>
-      <section className="section h-screen" id="about">1</section>
+     <About />
       <section className="section h-screen" id="services">2</section>
       <section className="section h-screen" id="portfolio">3</section>
       <section className="section h-screen" id="blog">4</section>

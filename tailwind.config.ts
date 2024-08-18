@@ -13,9 +13,11 @@ const config: Config = {
       },
       colors: {
         'gris-link': '#999999',
+        'title':"#292929"
       },
       boxShadow: {
         'active-link': 'inset 0 -6px 0 #fdd912',
+        'hover-link': 'inset 0 -14px 0 #fdd912',
         'header':"0 25px 50px rgba(0, 0, 0, 0.045)"
       },
       animation: {
