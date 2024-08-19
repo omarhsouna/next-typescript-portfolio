@@ -15,7 +15,8 @@ const config: Config = {
         'gris-link': '#999999',
         'title':"#292929",
         'gris-section':'#f9f9f9',
-        'yellow':'#fdd912'
+        'yellow':'#fdd912',
+        'date':'#b9b9b9'
       },
       boxShadow: {
         'active-link': 'inset 0 -6px 0 #fdd912',

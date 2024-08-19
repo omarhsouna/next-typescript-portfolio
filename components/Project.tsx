@@ -15,14 +15,14 @@ const Project = () => {
                 <p className="text-xs leading-6 lg:text-base text-gris-link font-light">
                     Improve UI with beautiful templates and components for Tailwind css.
                 </p>
-                <div className="flex flex-wrap items-center mt-6 justify-starts ">
-                    <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-black bg-yellow rounded-2xl">
+                <div className="flex items-center mt-2 gap-2">
+                    <div className="text-xs  py-1.5 px-4 text-black bg-yellow rounded-2xl">
                         #react.js
                     </div>
-                    <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-black bg-yellow rounded-2xl">
+                    <div className="text-xs  py-1.5 px-4 text-black bg-yellow rounded-2xl">
                         #typescript
                     </div>
-                    <div className="text-xs mb-2 mr-2 py-1.5 px-4 text-black bg-yellow rounded-2xl">
+                    <div className="text-xs  py-1.5 px-4 text-black bg-yellow rounded-2xl">
                         #tailwind css
                     </div>
                 </div>
