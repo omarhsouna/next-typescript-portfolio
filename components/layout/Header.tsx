@@ -54,7 +54,7 @@ export default function Header() {
         <div className={clsx("hidden lg:flex", hasScrolled ? "items-center gap-10 text-xs tracking-widest font-medium leading-3 text-gris-link" : "lg:hidden")}>
           <a href="#about" className={getStyleActiveLink("about")}>ABOUT</a>
           <a href="#services" className={getStyleActiveLink("services")}>WHAT I DO</a>
-          <a href="#portfolio" className={getStyleActiveLink("portfolio")}>WORKS</a>
+          <a href="#projects" className={getStyleActiveLink("projects")}>WORKS</a>
           <a href="#blog" className={getStyleActiveLink("blog")}>BLOG</a>
           <a href="#contacts" className={getStyleActiveLink("contacts")}>CONTACT</a>
         </div>
@@ -71,7 +71,7 @@ export default function Header() {
         <div className="flex flex-col gap-7">
         <a href="#about" className={getStyleActiveLink("about")}>ABOUT</a>
         <a href="#services" className={getStyleActiveLink("services")}>WHAT I DO</a>
-        <a href="#portfolio" className={getStyleActiveLink("portfolio")}>WORKS</a>
+        <a href="#projects" className={getStyleActiveLink("projects")}>WORKS</a>
         <a href="#blog" className={getStyleActiveLink("blog")}>BLOG</a>
         <a href="#contacts" className={getStyleActiveLink("contacts")}>CONTACT</a>
       </div>

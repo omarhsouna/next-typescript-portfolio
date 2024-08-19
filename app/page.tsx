@@ -3,6 +3,7 @@ import SocialMediaLinks from "components/SocialMediaLinks";
 import TypingEffect from "components/TypingEffect";
 import Header from "components/layout/Header";
 import Services from "components/sections/Services";
+import Projects from "components/sections/Projects";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       </div>
      <About />
       <Services />
-      <section className="section h-screen" id="portfolio">3</section>
+      <Projects />
       <section className="section h-screen" id="blog">4</section>
       <section className="section h-screen" id="contacts">5</section>
 

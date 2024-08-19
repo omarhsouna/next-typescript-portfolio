@@ -9,7 +9,7 @@ const Service = ({ Icon, title, description }:Props) => {
     <div>
     <div className="mb-4">{Icon}</div>
     <h3 className="uppercase text-xs font-medium tracking-widest text-title my-3">{title}</h3>
-    <p className="text-xs leading-6 lg:text-base text-gris-link">{description}</p>
+    <p className="text-xs leading-6 lg:text-base text-gris-link font-light">{description}</p>
   </div>
   )
 }
