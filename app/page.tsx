@@ -6,6 +6,7 @@ import Services from "components/sections/Services";
 import Projects from "components/sections/Projects";
 import Articles from "components/sections/Articles";
 import Contacts from "components/sections/Contacts";
+import Footer from "components/layout/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Projects />
       <Articles />
      <Contacts />
+     <Footer />
 
     </>
   );
