@@ -16,7 +16,8 @@ const config: Config = {
         'title':"#292929",
         'gris-section':'#f9f9f9',
         'yellow':'#fdd912',
-        'date':'#b9b9b9'
+        'date':'#b9b9b9',
+        'error':'#d32f2f'
       },
       boxShadow: {
         'active-link': 'inset 0 -6px 0 #fdd912',

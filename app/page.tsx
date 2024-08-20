@@ -5,6 +5,7 @@ import Header from "components/layout/Header";
 import Services from "components/sections/Services";
 import Projects from "components/sections/Projects";
 import Articles from "components/sections/Articles";
+import Contacts from "components/sections/Contacts";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Articles />
-      <section className="section h-screen" id="contacts">5</section>
+     <Contacts />
 
     </>
   );
