@@ -21,6 +21,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center h-full">
           <TypingEffect texts={["React.js Developer", "Freelancer", "Web Developer"]} />
           <SocialMediaLinks />
+          <a download="omar-hsouna-resume" href="/omar-hsouna-resume.pdf" className="max-w-fit text-xs hover:bg-yellow  text-white duration-300 ease-linear delay-0 mt-6 p-3 rounded-2xl border border-white">DOWNLOAD RESUME</a>
         </div>
       </div>
      <About />

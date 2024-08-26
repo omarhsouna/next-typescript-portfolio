@@ -40,7 +40,7 @@ export default function Header() {
     };
   }, []);
   const getStyleActiveLink = (currentSection: string) => {
-    return clsx("max-w-fit transition duration-300 ease-linear delay-0", activeSection === currentSection ? "shadow-active-link text-black" : 'hover:shadow-active-link hover:text-black')
+    return ["max-w-fit transition duration-300 ease-linear delay-0", activeSection === currentSection ? "shadow-active-link text-black" : 'hover:shadow-active-link hover:text-black']
   }
   return (
     <header className={
@@ -51,12 +51,12 @@ export default function Header() {
         <p className={clsx("text-3xl leading-10 font-semibold ", hasScrolled ? 'text-black' : 'text-white')}>
           Omar Hsouna
         </p>
-        <div className={clsx("hidden lg:flex", hasScrolled ? "items-center gap-10 text-xs tracking-widest font-medium leading-3 text-gris-link" : "lg:hidden")}>
-          <a href="#about" className={getStyleActiveLink("about")}>ABOUT</a>
-          <a href="#services" className={getStyleActiveLink("services")}>WHAT I DO</a>
-          <a href="#projects" className={getStyleActiveLink("projects")}>WORKS</a>
-          <a href="#blog" className={getStyleActiveLink("blog")}>BLOG</a>
-          <a href="#contacts" className={getStyleActiveLink("contacts")}>CONTACT</a>
+        <div className={clsx("hidden lg:flex items-center gap-10 text-xs tracking-widest font-medium leading-3", hasScrolled ? " text-gris-link" : "text-white")}>
+          <a href="#about" className={clsx(...getStyleActiveLink("about"))}>ABOUT</a>
+          <a href="#services" className={clsx(...getStyleActiveLink("services"))}>WHAT I DO</a>
+          <a href="#projects" className={clsx(...getStyleActiveLink("projects"))}>WORKS</a>
+          <a href="#blog" className={clsx(...getStyleActiveLink("blog"))}>BLOG</a>
+          <a href="#contacts" className={clsx("max-w-fit transition duration-300 ease-linear delay-0  border  p-2 rounded-xl hover:bg-yellow",hasScrolled ? " text-gris-link border-black" : "text-white border-white", activeSection === "contacts" && "text-black bg-yellow")}>CONTACT</a>
         </div>
         <button
           onClick={() => setIsOpen(true)}
@@ -69,11 +69,11 @@ export default function Header() {
       </div>
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
         <div className="flex flex-col gap-7">
-        <a href="#about" className={getStyleActiveLink("about")}>ABOUT</a>
-        <a href="#services" className={getStyleActiveLink("services")}>WHAT I DO</a>
-        <a href="#projects" className={getStyleActiveLink("projects")}>WORKS</a>
-        <a href="#blog" className={getStyleActiveLink("blog")}>BLOG</a>
-        <a href="#contacts" className={getStyleActiveLink("contacts")}>CONTACT</a>
+        <a href="#about" className={clsx(...getStyleActiveLink("about"))}>ABOUT</a>
+        <a href="#services" className={clsx(...getStyleActiveLink("services"))}>WHAT I DO</a>
+        <a href="#projects" className={clsx(...getStyleActiveLink("projects"))}>WORKS</a>
+        <a href="#blog" className={clsx(...getStyleActiveLink("blog"))}>BLOG</a>
+        <a href="#contacts" className={clsx(...getStyleActiveLink("contacts"))}>CONTACT</a>
       </div>
       </Drawer>
     </header>
