@@ -5,30 +5,30 @@ interface Props {
 }
 const TypingEffect = ({texts}:Props) => {
   const [displayedText, setDisplayedText] = useState('');
-  const [selectedText, setSelectedText] = useState(0)
+  const [selectedTextIndex, setSelectedTextIndex] = useState(0)
   const [index, setIndex] = useState(0);
-  const text = texts[selectedText];
+  const text = texts[selectedTextIndex];
+
   useEffect(() => {
-    if(selectedText === texts.length){
+    if(selectedTextIndex === texts.length){
         setDisplayedText("");
-        setSelectedText(0);
+        setSelectedTextIndex(0);
         setIndex(0);
         return;
     }
-    if(index === text.length){
+      const timeoutId = setTimeout(() => {
+         if(index === text.length){
         setIndex(0);
         setDisplayedText("");
-        setSelectedText(selectedText=> selectedText+1);
-        return;  
+        setSelectedTextIndex(selectedTextIndex=> selectedTextIndex+1);
       }
-    if (index < text.length) {
-      const timeoutId = setTimeout(() => {
+      if (index < text.length) {
         setDisplayedText((prev) => prev + text.charAt(index));
         setIndex((prev) => prev + 1);
+      }
       }, 150);
       return () => clearTimeout(timeoutId);
-    }
-  }, [index, selectedText, text]);
+  }, [index, selectedTextIndex, text, texts]);
 
   return (
     <div className="text-lg font-semibold text-white text-[44px] lg:text-8xl">
