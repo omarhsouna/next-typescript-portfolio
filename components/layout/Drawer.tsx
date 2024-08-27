@@ -17,14 +17,14 @@ export default function Drawer({ children, isOpen, setIsOpen }:Props) {
       
       <section
         className={
-          " w-screen max-w-80p right-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
+          " w-screen max-w-[70%] right-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
           (isOpen ? " translate-x-0 " : " translate-x-full ")
         }
 
       >
          <button
           onClick={() => setIsOpen(false)}
-          className="ml-auto flex flex-col items-center justify-center w-8 h-8 space-y-1 relative pr-3 pt-3">
+          className="ml-auto flex flex-col items-center justify-center w-8 h-8 space-y-1 relative mr-3 mt-3">
           <span className="w-6 h-0.5 bg-black rotate-45 top-0 translate-x-[1px] translate-y-[6px]"></span>
           <span className="w-6 h-0.5 bg-black -rotate-45 bottom-0"></span>
          
