@@ -14,14 +14,14 @@ const About = () => {
                     />
                 </div>
                 <div >
-                    <h1 className="lg:my-7 lg:text-[44px] leading-[56px] text-title">
+                    <h1 className="lg:my-7 lg:text-[44px] leading-[56px] text-title font-kaushan">
                         I'm Omar Hsouna,
                         <br />
                         Frontend Developer & Freelancer
                         <br />
                         from Tunisia, Korba.
                     </h1>
-                    <p className="my-6 text-xs leading-7 text-gris-link">
+                    <p className="my-6 text-base font-light leading-7 text-gris-link">
                         I have rich experience in web site design & building and customization. Also I am good at html, css, javascript, wordpress, php, jquery, bootstrap. I love to talk with you about our unique approach. Feel free to contact me writing an email with your project idea.
                     </p>
                     <a download="omar-hsouna-resume" href="/omar-hsouna-resume.pdf" className="max-w-fit text-xs hover:shadow-hover-link shadow-active-link text-black duration-300 ease-linear delay-0">DOWNLOAD RESUME</a>

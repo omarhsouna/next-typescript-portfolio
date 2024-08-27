@@ -25,7 +25,7 @@ const Contacts = () => {
     return (
         <section className="section bg-white py-10 lg:py-[120px]" id="contacts">
             <div className="lg:max-w-screen-xl mx-auto px-6">
-                <h2 className='text-[28px] font-normal text-title mb-8'>Contact Me</h2>
+                <h2 className='text-[28px] font-kaushan font-normal text-title mb-8'>Contact Me</h2>
                 <form onSubmit={handleSubmit(onSubmit)} >
                     <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
                         <TextField {...register("name", { required: "Name is required" })} placeholder='Name *' error={Boolean(errors.name)} helperText={errors.name?.message || ''} />

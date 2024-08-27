@@ -48,7 +48,7 @@ export default function Header() {
     }>
       <div className="mx-auto max-w-full lg:max-w-screen-xl flex items-center justify-between">
 
-        <p className={clsx("text-3xl leading-10 font-semibold ", hasScrolled ? 'text-black' : 'text-white')}>
+        <p className={clsx("text-3xl leading-10 font-semibold font-kaushan", hasScrolled ? 'text-black' : 'text-white')}>
           Omar Hsouna
         </p>
         <div className={clsx("hidden lg:flex items-center gap-10 text-xs tracking-widest font-medium leading-3", hasScrolled ? " text-gris-link" : "text-white")}>

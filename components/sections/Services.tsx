@@ -90,7 +90,7 @@ const Services = () => {
     return (
         <section className="section bg-gris-section py-10 lg:py-[120px]" id="services">
             <div className="lg:max-w-screen-xl mx-auto px-6">
-                <h2 className='text-[28px] font-normal text-title mb-8'>What I Do</h2>
+                <h2 className='text-[28px] font-kaushan font-normal text-title mb-8'>What I Do</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                    {services.map(service=>(
                     <Service key={service.title} {...service} />
