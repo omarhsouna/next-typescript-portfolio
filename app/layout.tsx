@@ -3,8 +3,16 @@ import { Kaushan_Script, Poppins } from "next/font/google";
 
 import "./globals.css";
 
-const kaushan = Kaushan_Script({ weight:'400', subsets:['latin'], variable:'--font-kaushan' });
-const poppins = Poppins({ weight:['600','500','400','300'], subsets:['latin'], variable:'--font-poppins' });
+const kaushan = Kaushan_Script({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-kaushan",
+});
+const poppins = Poppins({
+  weight: ["600", "500", "400", "300"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,9 +26,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://omarhsouna.com/"></link>
+        <title>Freelance Senior React.js Developer | Omar Hsouna</title>
+        <meta
+          name="description"
+          content="Freelance senior React.js developer for hire, specialising in development of responsive websites and web applications in React.js, Next.js."
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Freelance Senior React.js Developer | Omar Hsouna"
+        />
+        <meta
+          property="og:description"
+          content="Freelance senior React.js developer for hire, specialising in development of responsive websites and web applications in React.js, Next.js."
+        />
+        <meta property="og:url" content="https://omarhsouna.com/" />
+        <meta property="og:site_name" content="Omar Hsouna" />
+      </head>
       <body className={`${poppins.variable} ${kaushan.variable}`}>
         {children}
-        </body>
+      </body>
     </html>
   );
 }

@@ -7,7 +7,7 @@ const About = () => {
         <div className="min-w-[200px] lg:max-w-[360px]">
           <Image
             src="/images/profile.webp"
-            width={600}
+            width={800}
             height={800}
             alt="Picture of the author"
             className="z-0 object-cover bg-center"
@@ -15,18 +15,17 @@ const About = () => {
         </div>
         <div>
           <h1 className="lg:my-7 lg:text-[44px] leading-[56px] text-title font-kaushan">
-            I&apos;m Omar Hsouna,
+            Hi my name is Omar Hsouna,
             <br />
-            Frontend Developer & Freelancer
+            Senior React.js, Next.js Developer & Freelancer
             <br />
             from Tunisia, Korba.
           </h1>
           <p className="my-6 text-base font-light leading-7 text-gris-link">
-            I have rich experience in web site design & building and
-            customization. Also I am good at html, css, javascript, wordpress,
-            php, jquery, bootstrap. I love to talk with you about our unique
-            approach. Feel free to contact me writing an email with your project
-            idea.
+            I’m a senior frontend developer with five years of experience in
+            React.js, passionate about creating clean, high-performance code. My
+            goal is to build websites with excellent UX while meeting project
+            deadlines and using cutting-edge technologies.
           </p>
           <a
             download="omar-hsouna-resume"
