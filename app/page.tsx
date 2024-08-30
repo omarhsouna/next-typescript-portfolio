@@ -6,9 +6,7 @@ import Header from "components/layout/Header";
 import Services from "components/sections/Services";
 import Projects from "components/sections/Projects";
 import Articles from "components/sections/Articles";
-const Contacts = dynamic(() => import("components/sections/Contacts"), {
-  ssr: false,
-});
+import Contacts from "components/sections/Contacts";
 import Footer from "components/layout/Footer";
 
 export default function Home() {
